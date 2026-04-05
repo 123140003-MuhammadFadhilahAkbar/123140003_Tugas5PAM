@@ -1,9 +1,8 @@
 # 📝 Notes App — Tugas 5 PAM
 
 **Nama:** Muhammad Fadhilah Akbar  
-**NIM:** 123140003  
-**Kelas:** IF25  
-**Mata Kuliah:** Pengembangan Aplikasi Mobile — ITERA  
+**NIM:** 123140003    
+**Mata Kuliah:** IF25-22017 Pengembangan Aplikasi Mobile — ITERA  
 
 ---
 
@@ -85,42 +84,7 @@ composeApp/src/commonMain/kotlin/org/example/project/
 
 ## 🗺️ Navigation Flow Diagram
 
-```
-                    ┌─────────────────────────────────────┐
-                    │         AppNavigation (NavHost)      │
-                    │                                      │
-                    │   ┌──────────────────────────────┐   │
-                    │   │    ModalNavigationDrawer     │   │
-                    │   │   (BONUS — swipe kiri / ≡)   │   │
-                    │   └──────────────────────────────┘   │
-                    │                                      │
-          ┌─────────▼─────────┐                           │
-          │  Bottom Navigation │                           │
-          │  [Catatan][Favorit][Profil]                    │
-          └─────────┬─────────┘                           │
-                    │                                      │
-     ┌──────────────┼──────────────┐                      │
-     ▼              ▼              ▼                      │
-NoteListScreen  FavoritesScreen  ProfileScreen            │
-     │              │                                      │
-     │(tap note)    │(tap note)                            │
-     ▼              ▼                                      │
-NoteDetailScreen ◄──┘                                     │
-     │                                                     │
-     │(tap Edit)                                           │
-     ▼                                                     │
-EditNoteScreen                                             │
-     │(Simpan)                                             │
-     └──────────────► NoteListScreen (popBackStack)        │
-                                                           │
-NoteListScreen                                            │
-     │(tap FAB +)                                          │
-     ▼                                                     │
-AddNoteScreen                                             │
-     │(Simpan / Batal)                                     │
-     └──────────────► NoteListScreen (popBackStack)        │
-                    └─────────────────────────────────────┘
-```
+<img width="1438" height="736" alt="Image" src="https://github.com/user-attachments/assets/4883b7a9-3bb9-4550-86c8-16497684a5b9" />
 
 ---
 
@@ -130,14 +94,14 @@ AddNoteScreen                                             │
 
 | Screen | Deskripsi |
 |--------|-----------|
-| `screenshot_note_list.png` | Tab Catatan — daftar note dengan FAB dan hamburger menu |
-| `screenshot_favorites.png` | Tab Favorit — note yang ditandai favorit |
-| `screenshot_profile.png` | Tab Profil — profil pengguna dengan dark mode toggle |
-| `screenshot_note_detail.png` | Detail catatan — menampilkan noteId, judul, isi |
-| `screenshot_add_note.png` | Form tambah catatan — color picker + input |
-| `screenshot_edit_note.png` | Form edit catatan — prefill dari data existing |
-| `screenshot_drawer.png` | Navigation Drawer — menu slide dari kiri (BONUS) |
-| `screenshot_dark_mode.png` | Dark mode aktif — semua screen dalam tema gelap |
+| <details><summary><code>screenshot_note_list.png</code></summary><br><img width="300" height="1280" alt="Image" src="https://github.com/user-attachments/assets/4ffe682a-57b8-4749-b7a1-1d2ff79756b8" /></details> | Tab Catatan - daftar note dengan FAB dan hamburger menu |
+| <details><summary><code>screenshot_favorites.png</code></summary><br><img width="300" height="1280" alt="Image" src="https://github.com/user-attachments/assets/185a0b2f-c884-4b72-990b-40a0af9e6afc" /></details> | Tab Favorit - note yang ditandai favorit |
+| <details><summary><code>screenshot_profile.png</code></summary><br><img width="300" height="1280" alt="Image" src="https://github.com/user-attachments/assets/6a729d8a-fb96-4a01-9b45-8550ceb311fa" /></details> | Tab Profil - profil pengguna dengan dark mode toggle |
+| <details><summary><code>screenshot_note_detail.png</code></summary><br><img width="300" height="1280" alt="Image" src="https://github.com/user-attachments/assets/d1a3fea7-726f-4abb-ae7c-69e107285046" /></details> |  Detail catatan - menampilkan noteId, judul, isi |
+| <details><summary><code>screenshot_add_note.png</code></summary><br><img width="300" height="1280" alt="Image" src="https://github.com/user-attachments/assets/52c06dc8-9f28-4701-9754-bf35eb74341c" /></details> |   Form tambah catatan - color picker + input |
+| <details><summary><code>screenshot_edit_note.png</code></summary><br><img width="300" height="1280" alt="Image" src="https://github.com/user-attachments/assets/9c18ff5c-48a1-4b66-83aa-c50826bf3e89" /></details> |   Form edit catatan - prefill dari data existing |
+| <details><summary><code>screenshot_drawer.png</code></summary><br><img width="300" height="1280" alt="Image" src="https://github.com/user-attachments/assets/ad606617-dcf1-4005-8ada-a0e706eeab49" /></details> |   Navigation Drawer - menu slide dari kiri (BONUS) |
+| <details><summary><code>screenshot_dark_mode.png</code></summary><br><img width="300" height="1280" alt="Image" src="https://github.com/user-attachments/assets/70abe9e4-f6e2-4c17-b86d-cfdf9f870df4" /></details> |   Dark mode aktif - semua screen dalam tema gelap |
 
 ---
 
