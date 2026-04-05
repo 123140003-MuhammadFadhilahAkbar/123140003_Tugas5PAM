@@ -1,8 +1,8 @@
-# 📝 Notes App — Tugas 5 PAM
+# 📝 Notes App - Tugas 5 PAM
 
 **Nama:** Muhammad Fadhilah Akbar  
 **NIM:** 123140003    
-**Mata Kuliah:** IF25-22017 Pengembangan Aplikasi Mobile — ITERA  
+**Mata Kuliah:** IF25-22017 Pengembangan Aplikasi Mobile
 
 ---
 
