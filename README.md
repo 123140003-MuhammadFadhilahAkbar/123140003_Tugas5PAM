@@ -39,21 +39,21 @@ composeApp/src/commonMain/kotlin/org/example/project/
 
 ## ✅ Fitur yang Diimplementasikan
 
-### 1. Bottom Navigation (25%)
+### 1. Bottom Navigation
 - 3 tab: **Catatan**, **Favorit**, **Profil**
 - State tab tersimpan saat pindah (`saveState = true`, `restoreState = true`)
 - Tab aktif ditandai dengan icon filled + warna primary
 - Bottom bar otomatis **tersembunyi** di detail/form screens
 - Implementasi di: `AppNavigation.kt` → `AppBottomNavBar()`
 
-### 2. Navigation with Arguments (25%)
+### 2. Navigation with Arguments
 - `noteId: Int` di-pass sebagai `NavType.IntType`
 - Route dengan argument: `note_detail/{noteId}`, `edit_note/{noteId}`
 - Helper `createRoute(noteId)` di sealed class `Screen` untuk type-safety
 - `noteId` ditampilkan di NoteDetailScreen (badge **ID: #X**)
 - Implementasi di: `Screen.kt`, `AppNavigation.kt`, `NoteDetailScreen.kt`, `NoteFormScreens.kt`
 
-### 3. Navigation Flow (20%)
+### 3. Navigation Flow
 | Flow | Implementasi |
 |------|-------------|
 | List → Detail | `onNoteClick { id → navigate(NoteDetail(id)) }` |
@@ -63,17 +63,17 @@ composeApp/src/commonMain/kotlin/org/example/project/
 | Edit → Save | `popBackStack(NoteList, inclusive=false)` |
 | Back dari semua screen | `navController.popBackStack()` |
 
-### 4. Code Structure (20%)
+### 4. Code Structure
 - Routes terpusat di `sealed class Screen` — tidak ada magic string
 - ViewModel tidak memegang NavController (MVVM clean)
 - State hoisting: callback lambda dari UI ke ViewModel
 - Folder terpisah: `navigation/`, `screens/`, `components/`, `viewmodel/`, `model/`
 
-### 5. Dokumentasi (10%)
+### 5. Dokumentasi
 - README ini beserta flow diagram
 - Screenshot setiap screen (lihat bagian Screenshots)
 
-### 🎁 BONUS: Navigation Drawer (+10%)
+### 6.Navigation Drawer 
 - `ModalNavigationDrawer` membungkus seluruh UI
 - Dibuka via tombol **hamburger (≡)** di TopAppBar NoteListScreen
 - Gesture swipe dari kiri juga berfungsi (hanya di tab utama)
@@ -106,17 +106,9 @@ composeApp/src/commonMain/kotlin/org/example/project/
 ---
 
 ## 🎬 Video Demo
-
-> File: `demo_week5.mp4` (≤ 30 detik)
-
-Urutan demo yang disarankan:
-1. Buka app → tampil NoteListScreen
-2. Buka Navigation Drawer (swipe/hamburger)
-3. Tap catatan → NoteDetailScreen (lihat ID argument)
-4. Tap Edit → EditNoteScreen → Simpan → kembali ke list
-5. Tap FAB → AddNoteScreen → isi form → Simpan
-6. Tap tab Favorit → FavoritesScreen
-7. Tap tab Profil → toggle Dark Mode
+| Fitur | Preview | Keterangan |
+| :--- | :--- | :--- |
+| **Video Demo** | [▶️ Tonton Video Demo (Google Drive)](https://drive.google.com/file/d/1EgskJWBT33ueOwkL3q2IeKRz2XIJPW5n/view?usp=drivesdk) | `demo_week5.mp4` (≤ 30 detik) |
 
 ---
 
